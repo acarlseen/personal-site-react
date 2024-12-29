@@ -1,17 +1,23 @@
 import React from 'react'
 
-export const GlowBorder = () => {
-  return (
-    <div className='fixed left-0 top-1/4 bg-black  w-14 z-40 rounded-r-lg overflow-hidden'>
-        <div className='absolute w-40 h-40 rounded-r-lg bg-gradient-to-br from-[#C084FC] to-[#0EA5E9] opacity-75 blur animate-spin'></div>
-        <div className='relative m-1 bg-[#000300] rounded-r-lg h-full bg-opacity-100 p-1 flex'>
-            <ul className='flex flex-col justify-between'>
-                <li ><a href="https://github.com/acarlseen" target='new'><FaGithub size={30} color='white'/></a></li>
-                <li><a href="https://www.linkedin.com/in/acarlseen/" target='new'><ImLinkedin2 size={30} color='white' /></a></li>
-                <li><a href="" target='new'><FaCoffee size={40} color='white'/></a></li>
+interface Props {
+    x : number,
+    y : number,
+    round?: boolean,
 
-            </ul>
-        </div>
+}
+
+
+export const GlowBorder = (props: Props = {x: 0, y: 0, round: false}) => {
+    const ring_x = (props.x/4) + 0.5
+    const ring_y = (props.y/4) + 0.5
+  return (
+    <div className={`absolute bg-black overflow-hidden shadow-lg
+            w-[${ring_x}rem] h-[${ring_y}rem]
+            ${props.round ? 'rounded-full' : ''}`}>
+        <div className={`absolute w-[calc(100%+2rem)] h-[calc(100%+2rem)] left-[-1rem] top-[-1rem] 
+            bg-gradient-to-br from-[#C084FC] to-[#0EA5E9] opacity-90 blur animate-pulse`}></div>
+        
     </div>
   )
 }

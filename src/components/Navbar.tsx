@@ -1,15 +1,35 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 export const Navbar = () => {
     const [expanded, setExpanded] = useState(false);
 
+    const [navbarIsExpanded, setNavbarIsExpanded] = useState(true);
+    const [prevScrollY, setPrevScrollY] = useState(0);
+
+    useEffect( () => {
+        const handleScrollEvent = () =>{
+            const currentScrollY = window.scrollY;
+            if (navbarIsExpanded==true && currentScrollY > prevScrollY)
+                setNavbarIsExpanded(false);
+            else if (navbarIsExpanded==false && currentScrollY < prevScrollY)
+                setNavbarIsExpanded(true);
+
+            setPrevScrollY(currentScrollY);
+        };
+        window.addEventListener('scroll', handleScrollEvent);
+        return () => removeEventListener('scroll', handleScrollEvent);
+    
+    }, [prevScrollY]);
+
   return (
     <>
-    <div className='z-50 fixed w-full bg-[#000300]'>
+    <div className={navbarIsExpanded ? 'z-50 fixed bg-[#000300] w-full top-0 ease-in-out duration-300' 
+        :
+            'z-50 fixed bg-[#000300] w-full top-[-5rem] opacity-40 ease-in-out duration-1000'}>
 
         <div className='flex justify-between items-center h-24 max-w-[1024px] mx-auto px-4 text-white '>
-            <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
+            <h1 className='w-full text-3xl font-bold text-[#00df9a]'>ALEX CARLSEEN.</h1>
             
             <ul className='hidden md:flex'>
                 <li className='p-4'>About</li>
