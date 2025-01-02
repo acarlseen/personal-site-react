@@ -23,15 +23,19 @@ interface Props {
 export const ProjectCard = (props : Props) => {
     console.log(props.project.bg)
   return (
-        <div className={`shadow-xl flex min-w-[400px] min-h-96 text-white font-bold 
-              w-1/4 rounded-lg m-10 h-60 group overflow-hidden
+        <div className={`relative shadow-lg flex h-full  w-full  text-white font-bold 
+               rounded-lg   group overflow-hidden items-center justify-center
             bg-[url('${props.project.bg}')] bg-cover bg-center`}>
-            <div className='p-4 w-full invisible group-hover:visible group-hover:bg-opacity-30 group-hover:bg-black flex flex-col justify-between items-center'>
+            <div className='absolute text-4xl group-hover:opacity-0 transition'>
+                {props.project.title}
+            </div>
+            <div className=' absolute p-4 w-full opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:bg-opacity-30 group-hover:bg-black flex flex-col justify-between items-center transition'>
                 <h1 className='text-xl md:text-2xl lg:text-3xl uppercase'>{props.project.title}</h1>
                 <p className='mt-4'>
                     {props.project.info}
                 </p>
-                <a href={props.project.link} className="w-[70%]"><button className='p-4 w-full bg-teal-400 rounded-xl border-gray-300 border-2'>GitHub Repo</button></a>
+                <a href={props.project.link} className="w-[70%]"><button className='p-4 w-full bg-[#00df9a] rounded-xl 
+                hover:bg-[#379b7b]'>GitHub Repo</button></a>
             </div>
         </div>
   )

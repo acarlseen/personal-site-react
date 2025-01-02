@@ -2,10 +2,11 @@
 import { FaCoffee, FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa6'
 import { ImLinkedin2 } from 'react-icons/im'
-import { MdEmail, MdLinkedCamera } from 'react-icons/md'
+import { MdCode, MdDescription, MdEmail, MdLinkedCamera, MdOutlineDocumentScanner, MdReceiptLong } from 'react-icons/md'
 import { RoundButton } from './RoundButton'
 import { MdComputer } from 'react-icons/md'
 import { FcContacts } from 'react-icons/fc'
+import { GrOverview } from 'react-icons/gr'
 
 // TODO - make free-floating round buttons
 // TODO - separate glow effect to use as a border anywhere?
@@ -23,10 +24,10 @@ export default function SideBar() {
     //         </ul>
     //     </div>
     // </div>
-    <div className='fixed left-8 top-1/4 h-[50%] z-40 rounded-r-lg flex flex-col justify-evenly'>
+    <div className='fixed invisible left-8 top-1/4 h-[50%] z-40 rounded-r-lg flex flex-col justify-evenly sm:visible'>
         <RoundButton size={12} content={<MdComputer size={24} color='white' />} glow/>
-        <RoundButton size={12} content={<MdEmail size={24} color='white' />} glow/>
-        <RoundButton size={12} content={<MdEmail size={24} color='white' />} glow/>
+        <RoundButton size={12} content={<MdCode size={24} color='white' />} glow/>
+        <RoundButton size={12} content={<MdDescription size={24} color='white' />} glow/>
         <RoundButton size={12} content={<MdEmail size={24} color='white' />} glow/>
     </div>
 

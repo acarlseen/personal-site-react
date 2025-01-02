@@ -1,10 +1,11 @@
 .embla {
+
     max-width: 800px;
     margin: auto;
-    --slide-height: 400px;
-    --slide-width: 400px;
+    --slide-height: 300px;
+    --slide-width: 600px;
     --slide-spacing: 1rem;
-    --slide-size: 60%;
+    --slide-size: 80%;
   }
   .embla__viewport {
     overflow: hidden;
@@ -19,15 +20,18 @@
     flex: 0 0 var(--slide-size);
     min-width: var(--slide-width);
     padding-left: var(--slide-spacing);
+    object-fit: cover;
   }
   .embla__slide__number {
     box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
     border-radius: 1.8rem;
+    margin: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     height: var(--slide-height);
     user-select: none;
+
   }
   .embla__controls {
     display: grid;
@@ -113,29 +117,7 @@
   }
   
 
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-html {
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  line-height: 1.15;
-  background-color: var(--background-site);
-  font-size: 62.5%;
-  font-family: Inter, 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-body {
-  color: var(--text-high-contrast);
-  font-size: 1.6rem;
-  line-height: 1.65;
-}
+
 .theme-light {
   --brand-primary: rgb(47, 112, 193);
   --brand-secondary: rgb(116, 97, 195);

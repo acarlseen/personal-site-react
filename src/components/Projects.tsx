@@ -7,9 +7,9 @@ export const Projects = () => {
     const SLIDE_COUNT = 5
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
   return (
-    <div className='bg-zinc-50 w-full p-10 h-full'>
+    <div className='bg-zinc-50 w-full p-10'>
         <div className='flex justify-center'>
-            <h1 className='font-bold text-3xl'>
+            <h1 className='font-bold text-4xl m-12'>
                 PROJECTS
             </h1>
         </div>

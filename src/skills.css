@@ -1,0 +1,11 @@
+.skills{
+    grid-template-areas: "skill-item";
+}
+
+.tabs{
+    grid-area: tabs;
+}
+
+.skill-card{
+    grid-area: skill-item;
+}

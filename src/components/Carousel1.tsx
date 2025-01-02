@@ -32,7 +32,7 @@ const Carousel1: React.FC<PropType> = (props) => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <section className="embla">
+    <section className="embla px-12">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {projectsContent.map((project, index) => (
