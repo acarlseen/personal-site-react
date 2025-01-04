@@ -7,6 +7,7 @@ import { RoundButton } from './components/RoundButton'
 import { Carousel } from './components/Carousel'
 import Carousel1 from './components/Carousel1'
 import { Skills } from './components/Skills'
+import { GlowDiv } from './components/GlowDiv'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,8 +18,11 @@ function App() {
         <Navbar />
         <SideBar />
         <HeroImage />
+        <GlowDiv />
         <Projects />
+        <GlowDiv />
         <Skills />
+        <GlowDiv />
       </div>
 
     </>

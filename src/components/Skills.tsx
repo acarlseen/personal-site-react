@@ -24,9 +24,10 @@ export const Skills = () => {
     console.table(tabSelected)
 
   return (
-    <div className='flex justify-center w-full'>
+    <>
+    <div className='flex justify-center w-full py-20 ' id='skills'>
         <div className='flex flex-col justify-center  mx-12 max-w-[800px] w-full'>
-            <h1 className='text-4xl text-center m-4'>Skills</h1>
+
             <div className='flex-row flex rounded-md overflow-hidden'>
                 <div className='space-y-3 tabs h-full flex flex-col'>
                     <h2 className='text-center text-2xl font-bold bg-red-200 max-h-fit py-2 filetab'
@@ -37,8 +38,8 @@ export const Skills = () => {
                     onClick={() => handleClick('skills')}>Skills</h2>
                 </div>
                 <div className='grid skills w-full h-full'>
-                    <div className={`${tabSelected.languages == true ? 'visible': 'invisible'} bg-red-200 skill-card h-full`}>
-                        <ul className='pl-4 text-xl bg-red-200'>
+                    <div className={`${tabSelected.languages == true ? 'visible': 'invisible'} bg-red-200 skill-card h-full flex items-center justify-evenly p-4`}>
+                        <ul className='pl-4 text-xl bg-white bg-opacity-50 p-2 rounded-md h-full '>
                             <li>C++</li>
                             <li>C#</li>
                             <li>Objective-C</li>
@@ -46,6 +47,7 @@ export const Skills = () => {
                             <li>Typescript</li>
                             <li>PostgreSQL</li>
                         </ul>
+                        <p>I began my coding journey in high school with two years of classes in C++ before </p>
                     </div>
                     <div className={`${tabSelected.skills == true ? 'visible': 'invisible'} bg-green-200 skill-card h-full`}>
                         <ul className='pl-4 text-xl bg-green-200'>
@@ -67,5 +69,6 @@ export const Skills = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
