@@ -1,10 +1,5 @@
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import { GlowBorder } from '../animations/GlowBorder'
-import { FaComputer } from 'react-icons/fa6'
-import { GiComputerFan } from 'react-icons/gi'
-import { HiComputerDesktop } from 'react-icons/hi2'
-import { MdComputer } from 'react-icons/md'
-import { IconBase, IconBaseProps } from 'react-icons'
 
 interface Props {
     size: number,
@@ -19,7 +14,6 @@ interface Props {
  * @param content - text/icon displayed on button
  */
 export const RoundButton = (props : Props) => {
-    const div_size = (props.size*4)+8
   return (
     <div className={`w-${props.size+2} h-${props.size+2} `}>
         {props.glow != null ? <GlowBorder x={props.size} y={props.size} round /> : <></>}

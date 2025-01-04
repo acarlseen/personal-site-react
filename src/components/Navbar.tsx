@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 export const Navbar = () => {

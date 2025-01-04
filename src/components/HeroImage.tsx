@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
 import { ReactTyped } from 'react-typed';
 
 export default function HeroImage() {
-    const [index, setIndex] = useState(0);
 
   return (
     <div className='text-white h-[95vh] bg-hero bg-cover bg-center bg-blend-multiply brightness-[1.3]  

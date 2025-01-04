@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-interface tabSelected {
-    [key: string]: boolean;
-}
 
 export const Skills = () => {
     const [tabSelected, setTabSelected] = useState({

@@ -1,12 +1,8 @@
 
-import { FaCoffee, FaGithub } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa6'
-import { ImLinkedin2 } from 'react-icons/im'
-import { MdCode, MdDescription, MdEmail, MdLinkedCamera, MdOutlineDocumentScanner, MdReceiptLong } from 'react-icons/md'
+import { MdCode, MdDescription, MdEmail } from 'react-icons/md'
 import { RoundButton } from './RoundButton'
 import { MdComputer } from 'react-icons/md'
-import { FcContacts } from 'react-icons/fc'
-import { GrOverview } from 'react-icons/gr'
+
 
 // TODO - make free-floating round buttons
 // TODO - separate glow effect to use as a border anywhere?
