@@ -1,6 +1,3 @@
-import React from 'react'
-import { ProjectCard } from './ProjectCard'
-import { projectsContent } from '../content/ProjectsContent'
 import Carousel1 from './Carousel1'
 
 export const Projects = () => {
