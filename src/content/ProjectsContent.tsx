@@ -9,12 +9,6 @@ interface projectsContent extends Array<singleProject>{}
 
 export const projectsContent = [
     {
-        title: "Testing",
-        info: "This is a test entry",
-        link: "https://github.com/acarlseen/",
-        bg: 'src/assets/img/shrinath-2Y3AhqTIqNo-unsplash.jpg'
-    },
-    {
         title: "Bean Counter",
         info : "Built in React with Typescript and Vite, and \
                         with a back-end PostgreSQL database hosted on\

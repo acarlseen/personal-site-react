@@ -574,10 +574,6 @@ video {
   position: relative;
 }
 
-.inset-1 {
-  inset: 0.25rem;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -653,11 +649,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -688,10 +679,6 @@ video {
 
 .h-1 {
   height: 0.25rem;
-}
-
-.h-12 {
-  height: 3rem;
 }
 
 .h-20 {
@@ -731,18 +718,6 @@ video {
   height: 100vh;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[3\.5\] {
-  height: 3.5;
-}
-
-.h-\[3\.5rem\] {
-  height: 3.5rem;
-}
-
 .max-h-fit {
   max-height: -moz-fit-content;
   max-height: fit-content;
@@ -770,47 +745,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[calc\(\)\] {
-  width: calc();
-}
-
-.w-\[calc\(\$\)\] {
-  width: calc($);
-}
-
-.w-\[calc\(\$\{props\.size\}\)\] {
-  width: calc(${props.size});
-}
-
-.w-\[calc\(\$\{props\.size\}\/4\)\] {
-  width: calc(${props.size} / 4);
-}
-
-.w-\[calc\(\$\{props\.size\}\/4rem\)\] {
-  width: calc(${props.size} / 4rem);
-}
-
-.w-\[calc\(\$\{props\.size\}rem\/4rem\)\] {
-  width: calc(${props.size}rem / 4rem);
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-\[3\.5rem\] {
-  width: 3.5rem;
 }
 
 .max-w-\[1024px\] {
@@ -843,10 +777,6 @@ video {
   flex-wrap: wrap;
 }
 
-.content-center {
-  align-content: center;
-}
-
 .items-center {
   align-items: center;
 }
@@ -863,10 +793,6 @@ video {
   justify-content: space-evenly;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -875,6 +801,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.rounded-\[50\%\] {
+  border-radius: 50%;
 }
 
 .rounded-full {
@@ -891,18 +821,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-\[\] {
-  border-radius: ;
-}
-
-.rounded-\[50\%\] {
-  border-radius: 50%;
 }
 
 .rounded-b {
@@ -972,6 +890,10 @@ video {
   background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -987,10 +909,6 @@ video {
   background-color: rgb(113 113 122 / var(--tw-bg-opacity, 1));
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
@@ -1003,28 +921,12 @@ video {
   --tw-bg-opacity: 0.7;
 }
 
-.bg-\[url\(\'\$\{props\.project\.bg\}\'\)\] {
-  background-image: url('${props.project.bg}');
-}
-
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
 .bg-hero {
-  background-image: url('src/assets/img/shrinath-2Y3AhqTIqNo-unsplash.jpg'), linear-gradient(to bottom right, #C084FC, #0EA5E9);
-}
-
-.bg-\[url\(\"\$\{props\.project\.bg\}\"\)\] {
-  background-image: url("${props.project.bg}");
-}
-
-.bg-\[url\(\'\/\$\{props\.project\.bg\}\'\)\] {
-  background-image: url('/${props.project.bg}');
-}
-
-.bg-\[url\(\'\.\.\/\$\{props\.project\.bg\}\'\)\] {
-  background-image: url('../${props.project.bg}');
+  background-image: url('./assets/img/shrinath-2Y3AhqTIqNo-unsplash.jpg'), linear-gradient(to bottom right, #C084FC, #0EA5E9);
 }
 
 .from-\[\#C084FC\] {
@@ -1093,10 +995,6 @@ video {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1138,10 +1036,6 @@ video {
 .text-zinc-700 {
   --tw-text-opacity: 1;
   color: rgb(63 63 70 / var(--tw-text-opacity, 1));
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .opacity-40 {
@@ -1196,10 +1090,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.\*\:bg-\[url\(\"\$\{props\.project\.bg\}\"\)\] > * {
-  background-image: url("${props.project.bg}");
-}
-
 .hover\:bg-\[\#379b7b\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 155 123 / var(--tw-bg-opacity, 1));
@@ -1227,10 +1117,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:visible {
-    visibility: visible;
-  }
-
   .sm\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -1248,10 +1134,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:flex {
     display: flex;
   }
