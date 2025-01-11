@@ -14,10 +14,11 @@ interface Props {
  * @param content - text/icon displayed on button
  */
 export const RoundButton = (props : Props) => {
+  const tailToRem = props.size/4
   return (
-    <div className={`w-${props.size+2} h-${props.size+2} `}>
+    <div className={`h-[${tailToRem+0.5}rem] w-[${tailToRem+0.5}rem] flex justify-center items-center`}>
         {props.glow != null ? <GlowBorder x={props.size} y={props.size} round /> : <></>}
-        <div className={`bg-zinc-500 h-12 w-${props.size} rounded-full relative inset-1 flex items-center justify-center`}>
+        <div className={`bg-zinc-500 h-${props.size} w-${props.size} rounded-[50%] relative flex items-center justify-center`}>
             {props.content}
         </div>
 

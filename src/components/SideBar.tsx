@@ -20,11 +20,11 @@ export default function SideBar() {
     //         </ul>
     //     </div>
     // </div>
-    <div className='fixed invisible left-8 top-1/4 h-[50%] z-40 rounded-r-lg flex flex-col justify-evenly sm:visible'>
-        <RoundButton size={12} content={<MdComputer size={24} color='white' />} glow/>
-        <RoundButton size={12} content={<MdCode size={24} color='white' />} glow/>
-        <RoundButton size={12} content={<MdDescription size={24} color='white' />} glow/>
-        <RoundButton size={12} content={<MdEmail size={24} color='white' />} glow/>
+    <div className='fixed invisible left-8 top-1/4 h-[50%] z-40 flex flex-col justify-evenly lg:visible'>
+        <RoundButton size={12} content={<MdComputer size={24} color='white' />} glow />
+        <RoundButton size={12} content={<MdCode size={24} color='white' />} glow />
+        <RoundButton size={12} content={<MdDescription size={24} color='white' />} glow />
+        <RoundButton size={12} content={<MdEmail size={24} color='white' />} glow />
     </div>
 
   )
