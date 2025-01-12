@@ -15,7 +15,7 @@ export const projectsContent = [
                         AWS. This app will help you journal your coffee\
                         experiences and explore new roasts.",
         link: "https://github.com/acarlseen/bean-counter-react",
-        bg: './src/assets/img/BeanCounter.jpeg'
+        bg: '/Users/acarlseen/Documents/personal-site-react/src/assets/img/BeanCounter.jpeg'
     },
     {
         title: "Break Out",
