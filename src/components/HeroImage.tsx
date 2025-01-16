@@ -1,4 +1,5 @@
 import { ReactTyped } from 'react-typed';
+import { heroList } from '../content/HeroWords';
 
 export default function HeroImage() {
 
@@ -10,7 +11,7 @@ export default function HeroImage() {
             <h1 className='md:text-7xl sm:text-6xl text-4xl md:py-6'>Moving teams forward.</h1>
             <div className="typebox">
                 <p className='md:text-5xl sm:text-4xl text-xl font-bold'>I am a{' '}
-                <ReactTyped strings={['Mentor', 'Manager' ,'Team Player']} 
+                <ReactTyped strings={heroList} 
                 typeSpeed={120} 
                 backSpeed={90}
                 backDelay={1500}

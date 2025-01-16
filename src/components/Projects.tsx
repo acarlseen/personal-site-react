@@ -4,7 +4,8 @@ import Carousel1 from './Carousel1'
 export const Projects = () => {
 const SLIDES = projectsContent;
   return (
-    <div className='bg-zinc-50 w-full p-10'>
+    <div className='bg-zinc-50 w-full p-10'
+    id='projects'>
         <div className='flex justify-center'>
             <h1 className='font-bold text-4xl m-12'>
                 PROJECTS

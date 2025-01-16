@@ -15,14 +15,16 @@ export const projectsContent = [
                         AWS. This app will help you journal your coffee\
                         experiences and explore new roasts.",
         link: "https://github.com/acarlseen/bean-counter-react",
-        bg: '/src/assets/img/BeanCounter.jpeg'
+        bg: '/img/BeanCounter.jpeg'
     },
     {
         title: "Break Out",
-        info : "A retro game in the Godot enginel written in C# \
-                    this game is all about the Observer pattern.",
+        info : "A retro game made in the Godot engine— \
+        from a series of small games centered around \
+        implementing design patterns.\
+        This game is a quick study of the Observer pattern.",
         link: "https://github.com/acarlseen/breakout",
-        bg: '../src/assets/img/BreakOut.jpeg'
+        bg: '/img/BreakOut.jpeg'
     },
     {
         title: "Quicken Amortization",
@@ -30,7 +32,7 @@ export const projectsContent = [
                     I extended functionality to include customizable \
                     payment and compounding schedules.",
         link: "https://github.com/acarlseen/QAmmoriization",
-        bg: './src/assets/img/QAmmort.jpeg'
+        bg: '/img/QAmmort.jpeg'
     },
     
 ]

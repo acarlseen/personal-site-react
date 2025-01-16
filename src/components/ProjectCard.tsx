@@ -25,6 +25,7 @@ export const ProjectCard = (props : Props) => {
                rounded-lg  group overflow-hidden items-center justify-center 
             bg-cover bg-center`}
              style={{background: `url("${props.project.bg}")`, backgroundSize: 'cover'}}
+            //  style={{background: `url("/src/assets/img/BreakOut.jpeg")`, backgroundSize: 'cover'}}
             >
             <div className='absolute text-4xl bg-transparent group-hover:opacity-0 transition'>
                 {props.project.title}

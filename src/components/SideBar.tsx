@@ -21,7 +21,10 @@ export default function SideBar() {
     //     </div>
     // </div>
     <div className='fixed w-24 invisible left-8 top-1/4 h-[50%] z-40 flex flex-col justify-evenly lg:visible'>
+        <a href="#projects">
+
         <RoundButton size={12} content={<MdComputer size={24} color='white' />} glow />
+        </a>
         <RoundButton size={12} content={<MdCode size={24} color='white' />} glow />
         <RoundButton size={12} content={<MdDescription size={24} color='white' />} glow />
         <RoundButton size={12} content={<MdEmail size={24} color='white' />} glow />
