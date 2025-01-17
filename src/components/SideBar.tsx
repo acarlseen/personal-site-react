@@ -1,7 +1,6 @@
 
 import { MdCode, MdDescription, MdEmail } from 'react-icons/md'
 import { RoundButton } from './RoundButton'
-import { MdComputer } from 'react-icons/md'
 
 
 // TODO - make free-floating round buttons

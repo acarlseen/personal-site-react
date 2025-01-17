@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 export const Footer = () => {
