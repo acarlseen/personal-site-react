@@ -32,10 +32,16 @@ export const Navbar = () => {
             <h1 className='w-full text-3xl font-bold text-[#00df9a]'>ALEX CARLSEEN.</h1>
             
             <ul className='hidden md:flex'>
-                <li className='p-4'>About</li>
-                <li className='p-4'>Projects</li>
-                <li className='p-4'>Skills</li>
-                <li className='p-4'>Links</li>
+                <li className='p-4'>
+                    <a href="#projects">
+                        Projects
+                    </a> 
+                </li>
+                <li className='p-4'>
+                    <a href="#skills">
+                        Skills
+                    </a> 
+                </li>
             </ul>
 
             <div className='block md:hidden'

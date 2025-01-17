@@ -35,7 +35,7 @@ export const ProjectCard = (props : Props) => {
                 <p className='mt-4'>
                     {props.project.info}
                 </p>
-                <a href={props.project.link} className="w-[70%]"><button className='p-4 my-4 w-full bg-[#00df9a] rounded-xl 
+                <a href={props.project.link} className="w-[70%]" target='new'><button className='p-4 my-4 w-full bg-[#00df9a] rounded-xl 
                 hover:bg-[#379b7b]'>GitHub Repo</button></a>
             </div>
         </div>

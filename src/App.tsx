@@ -4,6 +4,8 @@ import HeroImage from './components/HeroImage'
 import SideBar from './components/SideBar'
 import { Skills } from './components/Skills'
 import { GlowDiv } from './components/GlowDiv'
+import { ContactUs } from './components/ContactMe'
+import { Footer } from './components/Footer'
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
         <GlowDiv />
         <Skills />
         <GlowDiv />
+        <Footer />
       </div>
 
     </>

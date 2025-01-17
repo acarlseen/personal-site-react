@@ -1,5 +1,6 @@
 interface singleProject {
     title: string,
+    value: string,
     info: string,
     link: string,
     bg: string
@@ -10,6 +11,7 @@ interface projectsContent extends Array<singleProject>{}
 export const projectsContent = [
     {
         title: "Bean Counter",
+        value: 'beancounter',
         info : "Built in React with Typescript and Vite, and \
                         with a back-end PostgreSQL database hosted on\
                         AWS. This app will help you journal your coffee\
@@ -19,6 +21,7 @@ export const projectsContent = [
     },
     {
         title: "Break Out",
+        value: 'breakout',
         info : "A retro game made in the Godot engine— \
         from a series of small games centered around \
         implementing design patterns.\
@@ -28,6 +31,7 @@ export const projectsContent = [
     },
     {
         title: "Quicken Amortization",
+        value: 'quickenamort',
         info : "A contribution to a project written in Objective-C. \
                     I extended functionality to include customizable \
                     payment and compounding schedules.",
